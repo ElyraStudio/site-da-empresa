@@ -1,42 +1,37 @@
-import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
-  const whatsappLink = "https://wa.me/5551996747657?text=Olá! Gostaria de saber mais sobre os serviços da Elyra.";
+  const whatsappLink =
+    "https://wa.me/5551996747657?text=Olá! Quero um site profissional para o meu negócio.";
 
   return (
-    <section id="contato" className="py-20 md:py-32 bg-dark relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-wine rounded-full blur-3xl" />
-      </div>
+    <section className="py-20 md:py-32 bg-wine text-primary-foreground">
+      <div className="container text-center max-w-3xl mx-auto">
+        <span className="inline-block px-4 py-2 mb-6 text-xs font-body font-medium tracking-wider uppercase bg-white/10 rounded-full">
+          Próximo passo
+        </span>
 
-      <div className="container relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-foreground leading-tight mb-6">
-            Vamos conversar sobre o seu projeto?
-          </h2>
-          
-          <p className="font-body text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
-            Os valores variam de acordo com cada projeto e suas necessidades específicas.
-          </p>
-          
-          <p className="font-body text-lg text-muted-foreground mb-10">
-            Para saber valores e opções,{" "}
-            <span className="text-wine-light font-medium">entre em contato pelo WhatsApp</span>.
-          </p>
-          
-          <Button variant="wine" size="xl" asChild className="group animate-pulse-soft">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              Falar com Leonardo
-            </a>
-          </Button>
+        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
+          Pronto para ter um site profissional?
+        </h2>
 
-          <p className="font-body text-sm text-muted-foreground mt-6">
-            Leonardo – Responsável pela Elyra
-          </p>
-        </div>
+        <p className="font-body text-lg opacity-90 mb-10">
+          Fale com a Elyra no WhatsApp e descubra a melhor solução para o seu
+          negócio, sem compromisso e sem complicação.
+        </p>
+
+        <Button
+          variant="secondary"
+          size="xl"
+          asChild
+          className="group inline-flex items-center gap-3"
+        >
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            Quero um site profissional
+          </a>
+        </Button>
       </div>
     </section>
   );

@@ -18,21 +18,22 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="animate-fade-up opacity-0">
             <span className="inline-block px-4 py-2 mb-8 text-xs font-body font-medium tracking-wider uppercase bg-wine/10 text-wine-light rounded-full border border-wine/20">
-              Estúdio Digital
+              Sites para pequenos negócios
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="animate-fade-up opacity-0 delay-100 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-primary-foreground leading-tight mb-6">
             Sites profissionais que{" "}
-            <span className="text-gradient">transformam</span>{" "}
+            <span className="text-gradient">vendem</span>{" "}
             seu negócio
           </h1>
 
           {/* Subtitle */}
           <p className="animate-fade-up opacity-0 delay-200 font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            A Elyra cria e aluga sites profissionais para pequenos negócios. 
-            Tenha presença online de qualidade sem complicação.
+            A Elyra cria e aluga sites profissionais para pequenos negócios que
+            querem aparecer no Google, transmitir confiança e receber mais
+            contatos todos os dias — sem complicação técnica.
           </p>
 
           {/* CTA Buttons */}
@@ -40,12 +41,12 @@ const HeroSection = () => {
             <Button variant="wine" size="xl" asChild className="group">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                Falar no WhatsApp
+                Quero um site profissional
               </a>
             </Button>
             <Button variant="wineOutline" size="lg" asChild>
               <a href="#servicos">
-                Conhecer serviços
+                Por que ter um site?
               </a>
             </Button>
           </div>
@@ -54,11 +55,11 @@ const HeroSection = () => {
           <div className="animate-fade-up opacity-0 delay-400 grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/10">
             <div className="text-center">
               <p className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-2">100%</p>
-              <p className="font-body text-sm text-muted-foreground">Sites responsivos</p>
+              <p className="font-body text-sm text-muted-foreground">Funciona no celular</p>
             </div>
             <div className="text-center">
               <p className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-2">SSL</p>
-              <p className="font-body text-sm text-muted-foreground">Segurança inclusa</p>
+              <p className="font-body text-sm text-muted-foreground">Passa confiança</p>
             </div>
             <div className="text-center">
               <p className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-2">24h</p>
